@@ -1,5 +1,5 @@
-﻿using ApiRestful.Models;
-using ApiRestful.ViewModel;
+﻿using ApiRestful.DTOs;
+using ApiRestful.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace ApiRestful.Infra
@@ -7,6 +7,92 @@ namespace ApiRestful.Infra
     public class ProdutoRepository : IProdutoRepository
     {
         private readonly ConnectionContext _connectionContext = new ConnectionContext();
+
+        public List<DashboardDTO> GetDashboard()
+        {
+            return _connectionContext.Produtos
+                        .GroupBy(x => x.produto_tipo)
+                        .Select(y => new DashboardDTO
+                        {
+                            Quantidade = y.Count(),
+                            MediaPreco = y.Average(p => p.preco_unit),
+                            Tipo = y.Key
+                        })
+                        .ToList();
+        }
+
+        public List<ProdutoDTO> GetAll()
+        {
+            try
+            {
+                return _connectionContext.Produtos
+                    .Select(x => 
+                    new ProdutoDTO
+                    {
+                        Id = x.produto_id,
+                        Nome = x.produto_nome,
+                        PrecoUnit = x.preco_unit,
+                        Tipo = x.produto_tipo
+                    })
+                    .ToList();
+            }
+            catch (Exception)
+            {
+
+                throw new NotImplementedException();
+            }
+            
+        }
+
+        public List<ProdutoDTO> GetByID(string Id)
+        {
+            try
+            { 
+                return _connectionContext.Produtos
+                    .Where(x => x.produto_id == Id)
+                    .Select(x => new ProdutoDTO
+                    {
+                        Id = x.produto_id,
+                        Nome = x.produto_nome,
+                        PrecoUnit = x.preco_unit,
+                        Tipo = x.produto_tipo
+                    })
+                    .ToList();
+
+            }
+            catch (Exception)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public void Insert(Produto produto)
+        {
+            try
+            {
+                _connectionContext.Produtos.Add(produto);
+                _connectionContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public void Update(Produto produto)
+        {
+            try
+            {
+                _connectionContext.Produtos.Update(produto);
+                _connectionContext.SaveChanges();
+            }
+            catch (Exception)
+            {
+
+                throw new NotImplementedException();
+            }
+            
+        }
 
         public void Delete(string id)
         {
@@ -23,64 +109,18 @@ namespace ApiRestful.Infra
 
         }
 
-        public List<Produto> GetAll()
+        public bool IsExisting(string id)
         {
-            try
+            var item = GetByID(id);
+
+            if (item.Count == 0)
             {
-                return _connectionContext.Produtos.ToList();
+                return false; 
             }
-            catch (Exception)
+            else
             {
-
-                throw new NotImplementedException();
+                return true;
             }
-            
-        }
-
-        public List<Produto> GetByID(string Id)
-        {
-            try
-            { 
-                return _connectionContext.Produtos.Where(x => x.produto_id == Id).ToList();
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
-        }
-
-        public List<Produto> GetByList()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Insert(Produto produto)
-        {
-            try
-            {
-                _connectionContext.Produtos.Add(produto);
-                _connectionContext.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-
-                throw ex;
-            }
-        }
-
-        public void Update(Produto produto)
-        {
-            try
-            {
-                _connectionContext.Produtos.Update(produto);
-            }
-            catch (Exception)
-            {
-
-                throw new NotImplementedException();
-            }
-            
         }
 
     }

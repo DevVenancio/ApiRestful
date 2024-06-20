@@ -1,5 +1,5 @@
-﻿using ApiRestful.Models;
-using ApiRestful.ViewModel;
+﻿using ApiRestful.DTOs;
+using ApiRestful.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiRestful.Controllers
@@ -17,8 +17,11 @@ namespace ApiRestful.Controllers
 
         [HttpGet]
         [Route("api/produto/ConsultarProdutoPeloId")]
-        public IActionResult GetProdutosById(ProdutoViewModel produto)
+        public IActionResult GetProdutosById(ProdutoRequest produto)
         {
+            if (!_produtoRepository.IsExisting(produto.Id))
+                return BadRequest();
+
             var prod = _produtoRepository.GetByID(produto.Id);
 
             return Ok(prod);
@@ -33,21 +36,56 @@ namespace ApiRestful.Controllers
             return Ok(prod);
         }
 
+        [HttpGet]
+        [Route("api/produto/Dashboard")]
+        public IActionResult GetDashboard()
+        {
+            var prod = _produtoRepository.GetDashboard();
+
+            return Ok(prod);
+        }
+
+        [HttpGet]
+        [Route("api/produto/ConsultarProdutosLista")]
+        public IActionResult GetProdutosByLista(List<string> id)
+        {
+            var prodResponse = new List<ProdutoDTO>();
+            foreach (var i in id){
+
+                if (!_produtoRepository.IsExisting(i))
+                    return BadRequest();
+
+                var prod = _produtoRepository.GetByID(i);
+                prodResponse.Add(prod.First());
+            }
+
+            return Ok(prodResponse);
+        }
+
         [HttpPost]
         [Route("api/produto/InserirProduto")]
-        public IActionResult InsertProdutos(ProdutoViewModel produto)
+        public IActionResult InsertProdutos(List<ProdutoRequest> produto)
         {
-            var prod = new Produto(produto.Id, produto.Nome, produto.Preco_unit, produto.Tipo);
+            foreach (var item in produto)
+            {
+                if (_produtoRepository.IsExisting(item.Id))
+                    return BadRequest();
 
-            _produtoRepository.Insert(prod);
+                var prod = new Produto(item.Id, item.Nome, item.Preco_unit, item.Tipo);
+
+                _produtoRepository.Insert(prod);
+            }
 
             return Ok();
         }
 
         [HttpPut]
         [Route("api/produto/AtualizarProduto")]
-        public IActionResult UpdateProduto(ProdutoViewModel produto) 
+        public IActionResult UpdateProduto(ProdutoRequest produto) 
         {
+            if (!_produtoRepository.IsExisting(produto.Id))
+                return BadRequest();
+
             var prod = new Produto(produto.Id, produto.Nome, produto.Preco_unit, produto.Tipo);
 
             _produtoRepository.Update(prod);
@@ -59,6 +97,9 @@ namespace ApiRestful.Controllers
         [Route("api/produto/DeletarProdutor")]
         public IActionResult DeleteProduto(string id)
         {
+            if (!_produtoRepository.IsExisting(id))
+                return BadRequest();
+
             _produtoRepository.Delete(id);
 
             return Ok();

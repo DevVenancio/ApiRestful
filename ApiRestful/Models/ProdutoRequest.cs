@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using System.ComponentModel.DataAnnotations;
 
-namespace ApiRestful.ViewModel
+namespace ApiRestful.Models
 {
-    public class ProdutoViewModel
+    public class ProdutoRequest
     {
         public string Id { get; set; }
         public string Nome { get; set; }
