@@ -4,6 +4,11 @@ APIRestful criada utilizando:
 - Entity Framework
 - PostgreSQL
 
+## Utilizando as Rotas
+Para utilizar as rotas, é necessário realizar o login de autenticação.
+- **Usuário:** admin
+- **Senha:** admin
+
 ## Instruções de Instanciamento do Banco de Dados:
 #### Criando o Database
 ```
