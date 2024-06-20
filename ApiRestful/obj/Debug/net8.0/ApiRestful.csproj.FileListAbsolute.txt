@@ -103,3 +103,11 @@ C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\obj\Debug\net8.0\ApiRest
 C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\obj\Debug\net8.0\ApiRestful.genruntimeconfig.cache
 C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\obj\Debug\net8.0\ref\ApiRestful.dll
 C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\obj\Debug\net8.0\ApiRestful.sourcelink.json
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\João Pedro\source\repos\ApiRestful\ApiRestful\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

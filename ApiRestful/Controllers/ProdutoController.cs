@@ -1,5 +1,6 @@
 ﻿using ApiRestful.DTOs;
 using ApiRestful.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiRestful.Controllers
@@ -15,6 +16,7 @@ namespace ApiRestful.Controllers
             _produtoRepository = produtoRepository ?? throw new ArgumentNullException();
         }
 
+        [Authorize]
         [HttpGet]
         [Route("api/produto/ConsultarProdutoPeloId")]
         public IActionResult GetProdutosById(ProdutoRequest produto)
@@ -27,6 +29,7 @@ namespace ApiRestful.Controllers
             return Ok(prod);
         }
 
+        [Authorize]
         [HttpGet]
         [Route("api/produto/ConsultarProdutos")]
         public IActionResult GetProdutos()
@@ -36,6 +39,7 @@ namespace ApiRestful.Controllers
             return Ok(prod);
         }
 
+        [Authorize]
         [HttpGet]
         [Route("api/produto/Dashboard")]
         public IActionResult GetDashboard()
@@ -45,6 +49,7 @@ namespace ApiRestful.Controllers
             return Ok(prod);
         }
 
+        [Authorize]
         [HttpGet]
         [Route("api/produto/ConsultarProdutosLista")]
         public IActionResult GetProdutosByLista(List<string> id)
@@ -62,6 +67,7 @@ namespace ApiRestful.Controllers
             return Ok(prodResponse);
         }
 
+        [Authorize]
         [HttpPost]
         [Route("api/produto/InserirProduto")]
         public IActionResult InsertProdutos(List<ProdutoRequest> produto)
@@ -79,6 +85,7 @@ namespace ApiRestful.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpPut]
         [Route("api/produto/AtualizarProduto")]
         public IActionResult UpdateProduto(ProdutoRequest produto) 
@@ -93,6 +100,7 @@ namespace ApiRestful.Controllers
             return Ok();
         }
 
+        [Authorize]
         [HttpDelete]
         [Route("api/produto/DeletarProdutor")]
         public IActionResult DeleteProduto(string id)

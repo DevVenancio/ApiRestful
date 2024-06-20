@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\infra\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\infra\\connectioncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\infra\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\infra\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +19,20 @@
       "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|c:\\users\\jo\u00E3o pedro\\source\\repos\\apirestful\\apirestful\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{561714B9-7B75-40D3-8631-582CAAAFE939}|ApiRestful\\ApiRestful.csproj|solutionrelative:apirestful\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,69 +42,108 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectionContext.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ConnectionContext.cs",
+              "RelativeDocumentMoniker": "ApiRestful\\Infra\\ConnectionContext.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ConnectionContext.cs",
+              "RelativeToolTip": "ApiRestful\\Infra\\ConnectionContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T02:09:33.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "ApiRestful\\Infra\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ProdutoRepository.cs",
+              "RelativeToolTip": "ApiRestful\\Infra\\ProdutoRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowCoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T02:08:30.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\Produto.cs",
+              "RelativeDocumentMoniker": "ApiRestful\\Models\\Produto.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\Produto.cs",
+              "RelativeToolTip": "ApiRestful\\Models\\Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T00:45:50.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ApiRestful\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ApiRestful\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T00:22:58.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "ApiRestful\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Services\\TokenService.cs",
+              "RelativeToolTip": "ApiRestful\\Services\\TokenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T00:08:42.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "IProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\IProdutoRepository.cs",
               "RelativeDocumentMoniker": "ApiRestful\\Models\\IProdutoRepository.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\IProdutoRepository.cs",
               "RelativeToolTip": "ApiRestful\\Models\\IProdutoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAcAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-19T20:29:42.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ProdutoController.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "ApiRestful\\Controllers\\ProdutoController.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "ApiRestful\\Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCgAAAArAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCQAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T21:27:10.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "ApiRestful\\Infra\\ProdutoRepository.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Infra\\ProdutoRepository.cs",
-              "RelativeToolTip": "ApiRestful\\Infra\\ProdutoRepository.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAwwEYAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T21:15:15.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "ApiRestful\\Models\\Produto.cs",
-              "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Models\\Produto.cs",
-              "RelativeToolTip": "ApiRestful\\Models\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-18T20:33:12.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Program.cs",
               "RelativeDocumentMoniker": "ApiRestful\\Program.cs",
               "ToolTip": "C:\\Users\\Jo\u00E3o Pedro\\source\\repos\\ApiRestful\\ApiRestful\\Program.cs",
               "RelativeToolTip": "ApiRestful\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAmAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAADsAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T19:59:23.741Z",
               "EditorCaption": ""

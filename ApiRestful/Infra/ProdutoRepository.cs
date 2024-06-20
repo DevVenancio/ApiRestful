@@ -36,7 +36,7 @@ namespace ApiRestful.Infra
                     })
                     .ToList();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
                 throw new NotImplementedException();
